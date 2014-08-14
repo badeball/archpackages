@@ -3,7 +3,7 @@
 
 _gemname=json_better_formatter
 pkgname=ruby-$_gemname
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 pkgdesc='A streaming-based JSON formatter in Ruby.'
 arch=(any)
@@ -13,7 +13,7 @@ depends=(ruby)
 options=(!emptydirs)
 source=(https://rubygems.org/downloads/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-sha1sums=('dd095f618425061888e3dd5c9384fba1c3a03ac4')
+sha1sums=('24de69b00c717daa7413e061c905e81f88ffcdaf')
 
 package() {
   local _gemdir="$(ruby -e'puts Gem.default_dir')"
