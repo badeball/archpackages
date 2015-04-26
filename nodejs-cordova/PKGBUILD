@@ -9,7 +9,9 @@ arch=('any')
 url="http://cordova.apache.org/"
 license=('Apache')
 depends=('nodejs')
-optdepends=('apache-ant: building for Android')
+optdepends=('apache-ant: building for Android'
+            'android-platform: building for Android'
+            'android-sdk-build-tools: building for Android')
 source=(http://registry.npmjs.org/$_npmname/-/$_npmname-${pkgver//_/-}.tgz)
 noextract=($_npmname-${pkgver//_/-}.tgz)
 sha1sums=('e4519197040b09b1bd131ecebc847716a2a7d7d0')
